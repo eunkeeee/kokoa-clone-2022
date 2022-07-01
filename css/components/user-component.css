@@ -1,5 +1,6 @@
 .user-component {
   display: flex;
+  /* flex-direction: column; */
 }
 
 .user-component {
@@ -47,7 +48,14 @@
   color: rgba(0, 0, 0, 0.5);
 }
 
-/* 은기작성 */
 .user-component__column:last-child {
   color: var(--gray-letter);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.user-component__time {
+  display: block;
+  margin-bottom: 10px;
 }
