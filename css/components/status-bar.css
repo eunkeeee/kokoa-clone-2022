@@ -23,6 +23,7 @@
   justify-content: flex-end;
   align-items: center;
 }
-.status-bar__column .fa-battery-quarter {
+.status-bar__column .fa-battery-quarter,
+.status-bar__column .fa-battery-full {
   margin: 0px 5px;
 }

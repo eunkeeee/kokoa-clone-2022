@@ -1,6 +1,9 @@
 :root {
-    --yellow: rgb(250, 225, 0);
-    --brown: rgb(60, 30, 30);
-    
+  --yellow: rgb(250, 225, 0);
+  --brown: rgb(60, 30, 30);
 
+  --horizontal-space: 25px;
+  /* 은기 작성 */
+  --gray-letter: rgba(0, 0, 0, 0.45);
+  --light-gray: rgba(0, 0, 0, 0.2);
 }
