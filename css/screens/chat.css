@@ -1,0 +1,153 @@
+#chat-screen {
+  background-color: rgb(171, 192, 209);
+  height: 1100vh;
+}
+#chat-screen .status-bar,
+#chat-screen .alt-header {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  background-color: rgb(171, 192, 209);
+  box-sizing: border-box;
+  /* z-index: 2; */
+}
+#chat-screen .status-bar {
+  z-index: 2;
+}
+
+#chat-screen .alt-header {
+  top: 20px;
+  z-index: 1;
+}
+
+.main-chat {
+  margin-top: 130px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.chat__timestamp {
+  color: white;
+  background-color: rgb(146, 164, 178);
+  padding: 15px;
+  border-radius: 25px;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+.message-row {
+  width: 100%;
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.message-row img {
+  width: 50px;
+  height: 50px;
+  border-radius: 40%;
+  margin-right: 10px;
+}
+
+.message__author {
+  color: var(--gray-letter);
+  font-size: 16px;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.message__info {
+  display: flex;
+  align-items: end;
+}
+
+.message__bubble {
+  background-color: white;
+  padding: 13px;
+  font-size: 18px;
+  border-radius: 17px;
+  border-top-left-radius: 0px;
+  margin-right: 5px;
+}
+
+.message_time {
+  color: var(--gray-letter);
+  font-size: 13px;
+}
+
+.message-row--own {
+  justify-content: flex-end;
+}
+
+.message-row--own .message__bubble {
+  background-color: var(--yellow);
+  border-top-right-radius: 0px;
+  border-top-left-radius: 17px;
+  margin-right: 0px;
+  margin-left: 5px;
+}
+
+/* 순서 바꾸기 */
+.message-row--own .message__info {
+  flex-direction: row-reverse;
+}
+
+.reply {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 25px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.reply__column {
+  position: relative;
+}
+
+.reply .reply__column:first-child {
+  width: 10%;
+}
+.reply .reply__column:last-child {
+  width: 90%;
+}
+
+.reply__column > i {
+  opacity: 0.5;
+}
+
+.reply input {
+  padding: 10px; /* column은 width가 없으므로 먼저 column의 width를 지정한 후에 적용 가능 */
+  width: 100%;
+  border: var(--main-border);
+  border-radius: 20px;
+}
+
+.reply__column:last-child > i,
+.reply__column:last-child button {
+  position: absolute;
+  right: -18px;
+  top: 4px;
+}
+
+.reply__column:last-child > i {
+  right: 25px;
+  top: 20px;
+}
+
+.reply__column button {
+  background-color: var(--yellow);
+  border: 1px solid rgb(253, 229, 0);
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+}
+
+.reply__column button:focus,
+.reply__column button:active {
+  outline: none;
+}
