@@ -25,8 +25,8 @@
 
 .nav__notification--smaller {
   background-color: tomato;
-  width: 10px;
-  height: 10px;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
   display: flex;
   justify-content: center;

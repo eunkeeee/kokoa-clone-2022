@@ -59,3 +59,13 @@
   display: block;
   margin-bottom: 10px;
 }
+
+.user-component--chats {
+  padding-bottom: 10px;
+  /* border-bottom: 1px solid var(--light-gray); */
+}
+
+.user-component__etc {
+  display: flex;
+  justify-content: center;
+}

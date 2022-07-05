@@ -5,11 +5,33 @@
   margin-top: 35px;
   padding: 25px;
 }
+
 .screen-header__title {
   font-size: 32px;
   font-weight: 800;
 }
 
+.screen-header__icons {
+  display: flex;
+}
+
 .screen-header__icons span {
-  margin-left: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-left: 13px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.header__notification--smaller {
+  position: absolute;
+  left: 23px;
+  top: 2px;
+  background-color: tomato;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
 }
