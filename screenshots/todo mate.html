@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)https://www.todomate.net/#/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="shortcut icon" type="image/png" href="https://www.todomate.net/favicon.png">
+    <title>todo mate</title>
+    <script src="./todo mate_files/firebase-app.js.다운로드"></script>
+    <script src="./todo mate_files/firebase-functions.js.다운로드"></script>
+    <script src="./todo mate_files/firebase-auth.js.다운로드"></script>
+    <script src="./todo mate_files/firebase-database.js.다운로드"></script>
+    <script src="./todo mate_files/firebase-messaging.js.다운로드"></script>
+    <script src="./todo mate_files/firebase-storage.js.다운로드"></script>
+    <script src="./todo mate_files/firebase-firestore.js.다운로드"></script>
+    <script src="./todo mate_files/firebase-analytics.js.다운로드"></script>
+    <script type="text/javascript" src="./todo mate_files/wurfl.js.다운로드"></script>
+    <style>
+      .center-screen {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        min-height: 100vh;
+      }
+    </style>
+  <script src="./todo mate_files/canvaskit.js.다운로드"></script><style></style><meta flt-viewport="" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><meta id="flutterweb-theme" name="theme-color" content="#191919"><script src="./todo mate_files/js" async=""></script></head>
+  <body flt-renderer="canvaskit (auto-selected)" flt-build-mode="release" spellcheck="false" style="position: fixed; inset: 0px; overflow: hidden; padding: 0px; margin: 0px; user-select: none; touch-action: none; font: 14px sans-serif; color: red;">
+    
+    <script>
+      if (WURFL.is_mobile === true) {
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+        var isiOS = [
+          'iPad Simulator',
+          'iPhone Simulator',
+          'iPod Simulator',
+          'iPad',
+          'iPhone',
+          'iPod'
+        ].includes(navigator.platform) || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+
+        if (isiOS) {
+          window.location.href = "https://apps.apple.com/us/app/id1505220130";
+        } else {
+          window.location.href = "https://play.google.com/store/apps/details?id=com.undefined.mate";
+        }
+      } else {
+        var logoImage = document.getElementById("logoImage");
+        logoImage.parentNode.removeChild(logoImage);
+
+        var firebaseConfig = {
+          apiKey: "AIzaSyCtSjt1LBEXmQnZdjD8DOPXBc5I1acm0Ew",
+          authDomain: "mate-914f3.firebaseapp.com",
+          databaseURL: "https://mate-914f3.firebaseio.com",
+          projectId: "mate-914f3",
+          storageBucket: "mate-914f3.appspot.com",
+          messagingSenderId: "274121826895",
+          appId: "1:274121826895:web:b05334cd15db33ac21803a",
+          measurementId: "G-E79F8FYYM6"
+        };
+        firebase.initializeApp(firebaseConfig);
+
+        var script = document.createElement('script');
+        script.type = "application/javascript";
+        script.src = "main.dart.js";
+        document.body.appendChild(script);
+      }
+    </script><script type="application/javascript" src="./todo mate_files/main.dart.js.다운로드"></script>
+  
+
+<flt-glass-pane style="position: absolute; inset: 0px; cursor: default;"></flt-glass-pane></body></html>

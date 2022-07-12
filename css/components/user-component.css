@@ -43,7 +43,8 @@
 }
 
 .user-component__subtitle {
-  margin-top: 5px;
+  /* margin-top: 5px; */
+  margin-right: 4px;
   font-size: 17px;
   color: rgba(0, 0, 0, 0.5);
 }
@@ -66,6 +67,7 @@
 }
 
 .user-component__etc {
+  margin-top: 5px;
   display: flex;
   justify-content: center;
 }
